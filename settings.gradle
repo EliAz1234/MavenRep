@@ -1,0 +1,1 @@
+include ':app', ':maven', ':libScanovateImaging_3_1_1'

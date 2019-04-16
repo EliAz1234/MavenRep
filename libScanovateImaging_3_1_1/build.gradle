@@ -1,0 +1,4 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('libScanovateImaging_3_1_1.aar'))
+dependencies {
+}
