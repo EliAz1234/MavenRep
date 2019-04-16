@@ -5,6 +5,7 @@ buildscript {
     dependencies {
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.4'
+
     }
 }
 
@@ -46,7 +47,7 @@ dependencies {
     implementation project(':libScanovateImaging_3_1_1')
 }
 ext {
-    bintrayRepo = 'TestToMaven'
+    bintrayRepo = 'maven'
     bintrayName = 'com.paygilant.maven'
     libraryName = 'maven'
 
@@ -125,7 +126,7 @@ artifacts {
 }
 
 Properties properties = new Properties()
-properties.load(project.rootProject.file('local.properties').newDataInputStream())
+//properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
 bintray {
     user = properties.getProperty("payg")
